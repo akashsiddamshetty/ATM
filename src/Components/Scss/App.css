@@ -1,0 +1,132 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 25rem;
+  width: 31.25rem;
+  background-color: #14253d;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 0 24px 70px 0px;
+          box-shadow: 0 24px 70px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-image {
+  width: 12.5rem;
+}
+
+.main-image img {
+  height: 9.375rem;
+  width: 12.5rem;
+}
+
+.signup-img {
+  height: 12.5rem;
+  width: 15.625rem;
+}
+
+.signup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 25rem;
+  width: 33.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 0px 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0px 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 49.9375em) {
+  .signup-card {
+    top: 54%;
+    width: 20rem;
+    height: 33.75rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.signup-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 18rem;
+  width: 15.625rem;
+  margin-top: 3.75rem;
+  margin-left: 1.125rem;
+}
+
+@media (max-width: 49.9375em) {
+  .signup-form {
+    margin-left: 0px;
+  }
+}
+
+.signup-eyeicon {
+  position: absolute;
+  top: 18.375rem;
+  right: 18rem;
+  cursor: pointer;
+}
+
+@media (max-width: 49.9375em) {
+  .signup-eyeicon {
+    top: 16.625rem;
+    right: 3.125rem;
+  }
+}
+
+.signup .password {
+  width: 15.625rem;
+}
+
+@media (min-width: 52.5em) {
+  .dekloginvis {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+/*# sourceMappingURL=App.css.map */
