@@ -1,30 +1,29 @@
 import React, { useState } from 'react';
 import debit_card from '../Assets/Images/atm-card.png';
 import { TextField, Button } from '@mui/material';
-// import { useNavigate } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 const PinVerification = () => {
-    // let navigate = useNavigate();
+    let navigate = useNavigate();
     const [pin, setPin] = useState("");
-    // const CardNumberVerify = async (e) => {
-    //     e.preventDefault();
+    const PinVerify = async (e) => {
+        e.preventDefault();
 
-    //     const res = await fetch('/CardNumberVerify', {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({ pin })
-    //     });
-    //     const data = res.json();
-    //     if (res.status === 400 || !data) {
-    //         window.alert("Invalid Credentials");
-    //     }
-    //     else {
-    //         window.alert("Verification sucessfull");
-    //         // navigate("/Singup");
-    //     }
-    // }
+        const res = await fetch('/PinVerify', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ pin })
+        });
+        const data = res.json();
+        if (res.status === 400 || !data) {
+            window.alert("Invalid pin");
+        }
+        else {
+            window.alert("Verification sucessfull");
+            navigate("/Singup");
+        }
+    }
 
     return (
         <>
@@ -45,7 +44,7 @@ const PinVerification = () => {
                 <div>
                     <Button
                         variant="contained"
-                    // onClick={CardNumberVerify}
+                    onClick={PinVerify}
                     >Verify</Button>
                 </div>
                 <div>
